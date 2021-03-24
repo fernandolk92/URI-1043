@@ -1,0 +1,28 @@
+import java.io.IOException;
+import java.util.*;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+    Scanner teclado = new Scanner(System.in);
+    
+    float a, b;
+    a= teclado.nextFloat();
+    b= teclado.nextFloat();
+
+    if(b > a){
+        if(b % a == 0){
+            System.out.println("Sao Multiplos");
+        }else
+        System.out.println("Nao sao Multiplos");
+    }if (a > b){
+        if (a % b == 0){
+        System.out.println("Sao Multiplos");
+        }else
+        System.out.println("Nao sao Multiplos");    
+        }
+    }   
+}    
+    
+ 
