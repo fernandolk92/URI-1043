@@ -1,0 +1,30 @@
+// RESPOSTA PARA EXERCICIO URI 1043 EM JAVA
+
+
+import java.io.IOException;
+import java.util.*;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+    Scanner teclado = new Scanner(System.in);
+    
+    float a, b, c, per, area;
+    a= teclado.nextFloat();
+    b= teclado.nextFloat();
+    c= teclado.nextFloat();
+    
+    if((a < (b + c)) && a > (b - c)){
+        if((b < (a + c)) && b > (a - c)){
+            if((c < (b + a)) && c > (b - a)){
+        System.out.printf("Perimetro = %.1f\n", per = a+b+c);
+            }    
+        }
+    }else
+        System.out.printf("Area = %.1f\n", area = ((a+b)*c)/2);    
+    
+        
+    }
+ 
+}
