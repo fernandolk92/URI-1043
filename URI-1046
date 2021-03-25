@@ -1,0 +1,26 @@
+import java.io.IOException;
+import java.util.*;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+    Scanner teclado = new Scanner(System.in);
+    
+    int a, b, total;
+    
+    a = teclado.nextInt();
+    b = teclado.nextInt();
+    
+    if (a == b){
+        System.out.println("O JOGO DUROU 24 HORA(S)");
+    }if (a > b){
+        total = b - a + 24;
+        System.out.println("O JOGO DUROU " + total + " HORA(S)");
+    }if (a < b){
+        total = b - a;
+        System.out.println("O JOGO DUROU " + total + " HORA(S)");
+    }
+    
+    }   
+}
