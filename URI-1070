@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.*;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+    
+    Scanner teclado = new Scanner(System.in);
+    
+    int x, i;
+    x = teclado.nextInt();
+    i = 0;
+ 
+    while(i < 6){
+        if(x % 2 == 1){
+            System.out.println(x);
+            i++;
+        }    
+    x++;
+    }
+    }
+ 
+}
